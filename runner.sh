@@ -2,4 +2,5 @@
 
 export BENCHMARKS_RUNNER=TRUE
 export BENCH_LIB=lib
-exec ./_build/default/bench/main.exe -run-without-cross-library-inlining "$@"
+
+exec dune exec -- ./bench/main.exe -fork -run-without-cross-library-inlining "$@"
