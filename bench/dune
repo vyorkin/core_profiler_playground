@@ -2,5 +2,3 @@
  (name main)
  (modules main)
  (libraries lib core_bench.inline_benchmarks))
-
-(env (dev (flags (:standard -warn-error -A))))
