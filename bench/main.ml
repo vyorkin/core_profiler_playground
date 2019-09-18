@@ -1,1 +1,1 @@
-Inline_benchmarks_public.Runner.main ~libname:"sample"
+Inline_benchmarks_public.Runner.main ~libname:"lib"
