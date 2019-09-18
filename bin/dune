@@ -1,5 +1,10 @@
 (executables
- (names basic1 online1 group1 timer1 timer2)
+ (names
+   basic1
+   online1
+   group1
+   timer1 timer2 timer3
+   delta_timer1)
  (libraries base core stdio core_profiler))
 
 (env (dev (flags (:standard -warn-error -A))))

@@ -4,16 +4,22 @@ let
   ocamlVersion = (builtins.parseDrvName pkgs.ocamlPackages.ocaml.name).version;
   packages = (with pkgs.ocamlPackages; [
     ocaml
-    base
-    stdio
-    core
-    core_bench
-    core_profiler
     findlib
     utop
     merlin
     ocp-indent
     ocp-index
+
+    base
+    stdio
+
+    core
+    core_bench
+    core_profiler
+
+    ppx_bench
+    ppx_inline_test
+
     ounit
   ]);
   mkpath = p: "${p}/lib/ocaml/${ocamlVersion}/site-lib";
